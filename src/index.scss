@@ -1,1 +1,10 @@
-@import "~normalize.scss";
+@import "scss/variables";
+@import "scss/fonts";
+
+body {
+	background: $primaryColor;
+}
+
+div {
+	border: 1px solid red;
+}
