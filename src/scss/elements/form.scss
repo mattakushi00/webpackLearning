@@ -1,0 +1,59 @@
+.form {
+	max-width: 340px;
+	margin: 0 auto;
+	font-size: 15px;
+	background: #fff;
+	padding: 30px 45px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+
+	&__title {
+		font-size: 31px;
+		font-weight: 700;
+		color: #000;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+	}
+
+	&__label {
+		margin-bottom: 25px;
+	}
+
+	&__input {
+		background-color: $grey;
+		padding: 15px;
+		border: none;
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 380px) {
+.form {
+	padding: 30px 25px;
+}
+}
+
+select {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+.select {
+	position: relative;
+}
+
+.select:before {
+	content: "";
+	display: block;
+	background: url('../../assets/imgs/sort-down-solid.svg') no-repeat center;
+	@include absoluteCenter;
+	bottom: -20px;
+	right: 10px;
+	left: inherit;
+	z-index: 2;
+	width: 30px;
+	height: 26px;
+	text-align: center;
+	cursor: pointer;
+}

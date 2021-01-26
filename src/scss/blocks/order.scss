@@ -1,0 +1,90 @@
+.order {
+	padding: 60px 0 160px;
+	background: url("../../assets/imgs/order__background.jpg") no-repeat center / cover;
+
+	.container {
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	&__left {
+		font-weight: 700;
+		color: #000;
+		max-width: 440px;
+		flex: 1 0 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__title {
+		font-size: 74px;
+		margin-bottom: 80px;
+		text-transform: uppercase;
+		position: relative;
+		z-index: 5;
+	}
+
+	&__list {
+		max-width: 330px;
+		position: relative;
+		z-index: 5;
+	}
+
+	&__item {
+		background: #fff;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+	}
+
+	&__img {
+		background: linear-gradient(30deg, #c2dae7, $green__main);
+		max-width: 75px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			max-width: 45px;
+		}
+	}
+
+	&__text {
+		font-size: 20px;
+		margin: 0;
+		padding: 15px 15px 10px;
+		text-transform: uppercase;
+	}
+
+	&__right {
+		max-width: 340px;
+		position: relative;
+		z-index: 5;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.order {
+
+		&__title {
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		&__left,
+		&__right {
+			max-width: 100%;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+.order {
+	&__title {
+		font-size: 30px;
+	}
+}
+}

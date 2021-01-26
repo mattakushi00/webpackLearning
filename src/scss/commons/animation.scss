@@ -1,0 +1,95 @@
+.animation-moveRight {
+	animation: moveRight 0.5s ease-in-out;
+}
+
+.animation-moveLeft {
+	animation: moveLeft 0.5s ease-in-out;
+}
+
+.animation-moveUp {
+	animation: moveUp 0.75s ease-in-out;
+}
+
+.animation-moveDown {
+	animation: moveDown 0.75s ease-in-out;
+}
+
+.animation-fadeIn {
+	animation: fadeIn 0.5s ease-in-out;
+}
+
+.animation-fadeOut {
+	animation: fadeOut 0.5s ease-in-out;
+}
+
+.visibility-none {
+	opacity: 0;
+}
+
+@keyframes moveRight {
+	from {
+		transform: translate(-200px, 0);
+		opacity: 0;
+	}
+
+	to {
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+}
+
+@keyframes moveUp {
+	from {
+		opacity: 0;
+		transform: translate(0, 30px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes moveDown {
+	from {
+		opacity: 0;
+		transform: translate(0, -30px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes moveLeft {
+	from {
+		transform: translate(200px, 0);
+		opacity: 0;
+	}
+
+	to {
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}

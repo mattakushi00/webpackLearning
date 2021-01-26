@@ -1,0 +1,20 @@
+@mixin zero {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+@mixin absoluteCenter {
+	position: absolute;
+	@include zero;
+	margin: auto;
+
+}
+
+@mixin pos-default {
+	position: relative;
+	@include zero;
+	margin: 0;
+}
+

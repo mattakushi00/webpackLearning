@@ -1,0 +1,20 @@
+.prices {
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 39px;
+
+	&__old {
+		font-size: 16px;
+		color: #000;
+		margin: 0 5px;
+		text-decoration: line-through;
+	}
+
+	&__new {
+		font-size: 27px;
+		color: $green__main;
+		margin: 0 5px;
+	}
+}

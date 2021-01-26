@@ -1,0 +1,80 @@
+.counter {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+
+	&__title {
+		font-family: 'Montserrat', 'Arial', sans-serif;
+		font-size: 15px;
+		font-weight: 400;
+		text-align: center;
+		margin-bottom: 10px;
+		max-width: 100%;
+	}
+
+	&__time {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		font-family: 'HeadingPro', 'Arial', sans-serif;
+		font-weight: 700;
+		font-size: 40px;
+		text-align: center;
+		background: #fff;
+		margin: 2px;
+		padding: 7px 0 0;
+		position: relative;
+
+		&:before {
+			@include absoluteCenter;
+			top: auto;
+			bottom: -20px;
+			font-family: 'Montserrat', 'Arial', sans-serif;
+			font-weight: 400;
+			font-size: 14px;
+		}
+	}
+
+	&__hours:before {
+		content: 'часов';
+	}
+
+	&__minutes:before {
+		content: 'минут';
+	}
+
+	&__seconds:before {
+		content: 'секунд';
+	}
+
+	&__hours:after,
+	&__minutes:after {
+		content: ':';
+		display: inline;
+		@include absoluteCenter;
+		left: auto;
+		top: 5px;
+		right: -17px;
+	}
+}
+
+.gradientBorder {
+	background: linear-gradient(30deg, $blue__main, $green__main);
+	color: #000;
+	max-width: 70px;
+	display: flex;
+}
+
+@media screen and (max-width: 380px){
+	.counter {
+
+		&__hours:after,
+		&__minutes:after {
+			content: none;
+		}
+	}
+}

@@ -1,0 +1,129 @@
+.problem {
+	padding: 70px 0;
+	background: #000 url("../../assets/imgs/problem__background.jpg") no-repeat center / cover;
+
+	.container {
+		justify-content: flex-end;
+	}
+
+	&__wrap {
+		max-width: 640px;
+	}
+
+	&__title,
+	&__text {
+		font-family: 'HeadingPro', 'Arial', sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #fff;
+	}
+
+	&__title {
+		font-size: 36px;
+		margin-bottom: 35px;
+		padding: 10px;
+		background: rgba(0, 0, 0, .7);
+		border-radius: 10px;
+	}
+
+	&__text {
+		font-size: 22px;
+		padding: 10px;
+		background: rgba(0, 0, 0, .7);
+		border-radius: 10px;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 40px;
+	}
+
+	&__item {
+		max-width: 195px;
+		min-height: 180px;
+		display: flex;
+		align-items: flex-end;
+		margin: 5px;
+		padding: 10px;
+
+		&:nth-child(1) {
+			background: url("../../assets/imgs/problem__item_1.jpg") no-repeat center / cover;
+		}
+		&:nth-child(2) {
+			background: url("../../assets/imgs/problem__item_2.jpg") no-repeat center / cover;
+		}
+		&:nth-child(3) {
+			background: url("../../assets/imgs/problem__item_3.jpg") no-repeat center / cover;
+		}
+		&:nth-child(4) {
+			background: url("../../assets/imgs/problem__item_4.jpg") no-repeat center / cover;
+		}
+		&:nth-child(5) {
+			background: url("../../assets/imgs/problem__item_5.jpg") no-repeat center / cover;
+		}
+		&:nth-child(6) {
+			background: url("../../assets/imgs/problem__item_6.jpg") no-repeat center / cover;
+		}
+	}
+
+	&__footer {
+		font-weight: 500;
+		font-size: 19px;
+		color: #fff;
+		line-height: 1.5;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.problem {
+		background-position: 100% 0;
+
+		.container {
+			justify-content: center;
+		}
+
+		&__list {
+			justify-content: center;
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.problem {
+		background: #000 url("../../assets/imgs/problem__background_mobile.jpg") no-repeat 50% 0 / 576px;
+
+		&__title {
+			font-size: 28px;
+			text-align: center;
+		}
+
+		&__list {
+			padding-top: 400px;
+		}
+
+		&__item {
+			max-width: 45%;
+			flex: 1 0 45%;
+			padding: 9px;
+		}
+
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.problem {
+		&__text {
+			font-size: 18px;
+		}
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.problem {
+		&__text {
+			font-size: 14px;
+		}
+	}
+}

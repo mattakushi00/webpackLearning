@@ -1,0 +1,51 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.symptoms-text:before {
+		content: '';
+		display: none;
+	}
+
+	select::-ms-expand {
+		display: none;
+	}
+
+	h1,h2,h3,h4,h5,h6 {
+		font-stretch: extra-condensed;
+	}
+
+	.btn {
+		font-size: 16px;
+	}
+
+	.order {
+
+		h1 {
+			font-size: 60px;
+		}
+
+		h3 {
+			font-size: 26px;
+		}
+
+		&__text {
+			flex: 1 0;
+		}
+	}
+
+	.cards__item {
+		flex: 1 0 100%;
+	}
+
+	.cards__top {
+		height: 500px;
+	}
+
+	.problem__text {
+		font-size: 13px;
+	}
+
+	.restore__girl,
+	.doctor {
+		margin-bottom: 0;
+	}
+
+}

@@ -1,0 +1,15 @@
+.logo {
+	max-width: 100%;
+	margin-bottom: -34px;
+
+	&__img {
+		max-width: 100px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.logo {
+		margin-bottom: 20px;
+	}
+}
